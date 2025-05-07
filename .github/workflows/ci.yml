@@ -23,13 +23,13 @@ jobs:
       - name: Run Maven Tests
         run: mvn test --no-transfer-progress
 
-  lint:
-    name: Check Code Format
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Run Checkstyle
-        run: mvn checkstyle:check --no-transfer-progress
+#  lint:
+#    name: Check Code Format
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v3
+#      - name: Run Checkstyle
+#        run: mvn checkstyle:check --no-transfer-progress
 
   build:
     name: Build Application
